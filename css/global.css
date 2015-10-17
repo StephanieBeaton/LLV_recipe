@@ -1,0 +1,305 @@
+body {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+}
+p {
+    line-height: 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fafafa;
+    border-bottom: 2px solid #ccc;
+    height: 70px;
+    width: 100%;
+}
+nav ul {
+	float: right;
+}
+nav li {
+    float: left;
+    width: auto;
+    list-style-type: none;
+}
+nav li a {
+    padding: 25px 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+nav li a:hover {
+    background: #e5e5e5;
+}
+#brand {
+	text-indent: -9000px;
+    background: url(http://img08.deviantart.net/37b9/i/2010/214/6/6/red_tomato_on_black_background_by_feureau.jpg) no-repeat center center;
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin: 10px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#hero {
+	/*
+    background: url(../../images/alpinelakes.jpg) no-repeat top left;
+    */
+    background: url(http://www.yorkblog.com/nosweat/files/2013/02/tomato.jpg) no-repeat top left;
+	text-align: center;
+	/* color: #fafafa; */
+    color: #333;
+	background-size: cover;
+	height: 350px;
+	padding: 25px 0;
+}
+
+#hero img {
+    border: 4px solid #333;
+	border-radius: 50%;
+    margin-top: 30px;
+    width: 150px;
+}
+#hero h2 {
+    font-size: 400%;
+    margin: 10px;
+    text-shadow: 2px 2px 2px #000;
+}
+#hero span.fooddesc {
+    border: 2px solid #333;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+}
+#main-content {
+    text-align: center;
+    padding: 25px 0;
+    overflow: hidden;
+}
+#main-content h3 {
+    font-size: 250%;
+    margin: 20px 0;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+.column img {
+    height: 200px;
+    width: 100%;
+    /*
+    width: 90%;
+    max-width:90%;
+    */
+    /*border-radius: 50%;*/
+    border-radius: 20px;
+    border: 5px solid #e72603;
+    margin-bottom: 20px;
+}
+.column h4 {
+    /*color: #1C929A;*/
+    color: #e72603;
+    font-size: 150%;
+    margin-bottom: 25px;
+}
+.column h5 {
+    color: #e72603;
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+.column td {
+    text-align: left;
+    font-size: 10pt;
+    padding: 1px 7px 1px 7px;
+}
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
+.active {
+    background-color:#e5e5e5;
+}
+.column .checked {
+    width:  5px;
+    border: 1px solid black;
+    margin: 3px 0 3px 0;
+}
+.column p {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 10pt;
+}
+.column .btn {
+    border: 2px solid #1C929A;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #1C929A;
+}
+.column li {
+    font-size: 10pt;
+    text-align: left;
+    margin: 5px 0 5px 30px;
+    list-style-type: circle;
+}
+
+.horizline {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.horizline a {
+    text-decoration: none;
+}
+
+#bouncingtomato h4 {
+    color: #e72603;
+    font-size: 150%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#stage {
+    position: relative;
+    margin: 1em auto;
+    width: 660px;
+    height: 240px;
+    border: 2px solid #666;
+    background: #cff;
+}
+
+/* keyframes definition for WebKit browsers */
+
+@-webkit-keyframes travel {
+  from { left: 0;     }
+  to   { left: 640px; }
+}
+
+@-webkit-keyframes bounce {
+  from, to  {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {                                     }
+  to   { -webkit-transform: rotateZ(360deg); }
+}
+
+/* keyframes definition for other browsers */
+
+@keyframes travel {
+  from { left: 0;     }
+  to   { left: 640px; }
+}
+
+@keyframes bounce {
+  from, to  {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#traveler {
+    position: absolute;
+    width: 20px;
+    height: 240px;
+
+    -webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 4.8s;
+
+    -moz-animation-name: travel;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-duration: 4.8s;
+
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4.8s;
+}
+
+#bouncer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 10px;
+
+    -webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4.2s;
+
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 4.2s;
+}
+
+#social {
+    /* background: #1C929A; */
+    background: #e72603;
+    color: #fafafa;
+    padding: 25px 0;
+    overflow: hidden;
+}
+#social ul {
+    width: 520px;
+    margin: 0 auto;
+}
+#social li {
+    float: left;
+    width: auto;
+    padding: 20px;
+    list-style-type: none;
+}
+
+footer[role="contentinfo"] {
+    padding: 1em 0;
+    text-align: center;
+}
